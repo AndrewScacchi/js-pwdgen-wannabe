@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Creating a password generator
+    The programm must:
+    hold tre different imput 
+    add them together
+    ?Plus adding a random generated number?
+    -->
+
+    <script type="text/javascript">
+        // Obtaining 4 different data storing into var
+        alert("Ready to get your new awesome password?");
+        let name = prompt("What is your name?");
+        let surname = prompt("What is your surname?");
+        //useless alert
+        alert("CLICK HERE TO WIN A FANTASTIC PRIZE!");
+        //end of useless alert
+        let preference = prompt("What is your favourite colour?");
+        let age = prompt('What is your age?');
+
+        // Componing all data into a single var
+        let password = name + surname + preference + age;
+
+        // Printing var to the page with flavour text
+        document.writeln("This is your password: " + password);
+    </script>
+
+
+</body>
+</html>
