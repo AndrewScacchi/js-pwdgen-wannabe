@@ -16,7 +16,14 @@
     -->
 
     <script type="text/javascript">
-        // Obtaining 4 different data storing into var
+        // random Math function for a random number
+        function getRandomInt(max) {
+            return Math.floor(Math.random() * max);
+        }
+        // random number for password
+        var random = getRandomInt(99);
+
+        // Obtaining 3 different data storing into var
         alert("Ready to get your new awesome password?");
         let name = prompt("What is your name?");
         let surname = prompt("What is your surname?");
@@ -24,13 +31,16 @@
         alert("CLICK HERE TO WIN A FANTASTIC PRIZE!");
         //end of useless alert
         let preference = prompt("What is your favourite colour?");
-        let age = prompt('What is your age?');
+        
+        //let age = prompt('What is your age?');
 
         // Componing all data into a single var
-        let password = name + surname + preference + age;
+        let password = name + surname + preference + random;
 
         // Printing var to the page with flavour text
         document.writeln("This is your password: " + password);
+
+        
     </script>
 
 
